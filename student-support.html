@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support - Challaghata Government School</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f9f5f2, #e0a96d);
+            text-align: center;
+            color: #2c2c2c;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #5a3d2b;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #5a3d2b;
+            font-weight: 400;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 180px;
+            margin: 15px auto;
+            display: block;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out 0.5s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(90, 61, 43, 0.9);
+            border-radius: 12px;
+            opacity: 0;
+            animation: fadeInNav 1s ease-in-out 1s forwards;
+        }
+
+        @keyframes fadeInNav {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 18px;
+            border-radius: 6px;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav a:hover {
+            background: #e0a96d;
+            color: #2c2c2c;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(243, 229, 216, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInSection 1s ease-in-out 1.5s forwards;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInSection {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .video-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .video-card h4 {
+            padding: 15px;
+            color: #5a3d2b;
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(90, 61, 43, 0.9);
+            color: white;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeInFooter 1s ease-in-out 4.5s forwards;
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="School Logo" class="logo">
+    <div class="container">
+        <h1>Student Support</h1>
+        <h3>"Empowering Young Minds, Building a Brighter Future."</h3>
+        
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="student-support.html">Student Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="section">
+            <h2>Maths (Class 3-5)</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe src="Addition and Subtraction _ Jack Hartmann.mp4" allowfullscreen></iframe>
+                    <h4>Addition and Subtraction for Class 3</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="chapter 4 multiplication.mp4" allowfullscreen></iframe>
+                    <h4>Multiplication for Class 4</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="division for class 5.mp4" allowfullscreen></iframe>
+                    <h4>Division for Class 5</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>EVS (Environmental Studies) (Class 3-5)</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe src="types of plants.mp4" allowfullscreen></iframe>
+                    <h4>Types of Plants for Class 3</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="water cycle for class 4.mp4" allowfullscreen></iframe>
+                    <h4>Water Cycle for Class 4</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="natural disaster for class 5.mp4" allowfullscreen></iframe>
+                    <h4>Natural Disasters for Class 5</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Social Studies (Class 3-5)</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe src="our country india for class 3.mp4" allowfullscreen></iframe>
+                    <h4>Our Country India for Class 3</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="indian freedom struggle for class 4.mp4" allowfullscreen></iframe>
+                    <h4>Indian Freedom Struggle for Class 4</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="world geography for class 5.mp4" allowfullscreen></iframe>
+                    <h4>World Geography for Class 5</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>English (Class 3-5)</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe src="basic grammer for class 3.mp4" allowfullscreen></iframe>
+                    <h4>Basic Grammar for Class 3</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="reading comprehension for class 4.mp4" allowfullscreen></iframe>
+                    <h4>Reading Comprehension for Class 4</h4>
+                </div>
+                <div class="video-card">
+                    <iframe src="creative writing for class5.mp4" allowfullscreen></iframe>
+                    <h4>Creative Writing for Class 5</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Challaghata Government School | Designed with ❤️ for education</p>
+        </div>
+    </div>
+</body>
+</html>

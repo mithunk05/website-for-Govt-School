@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Challaghata Government School</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f9f5f2, #e0a96d);
+            text-align: center;
+            color: #2c2c2c;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #5a3d2b;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #5a3d2b;
+            font-weight: 400;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 180px;
+            margin: 15px auto;
+            display: block;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out 0.5s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(90, 61, 43, 0.9);
+            border-radius: 12px;
+            opacity: 0;
+            animation: fadeInNav 1s ease-in-out 1s forwards;
+        }
+
+        @keyframes fadeInNav {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 18px;
+            border-radius: 6px;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav a:hover {
+            background: #e0a96d;
+            color: #2c2c2c;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(243, 229, 216, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInSection 1s ease-in-out 1.5s forwards;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInSection {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(90, 61, 43, 0.9);
+            color: white;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeInFooter 1s ease-in-out 4.5s forwards;
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="School Logo" class="logo">
+    <div class="container">
+        <h1>About Challaghata Government School</h1>
+        <h3>"Empowering Young Minds, Building a Brighter Future."</h3>
+        
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="student-support.html">Student Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="section">
+            <h2>Our History</h2>
+            <p>
+                Established in 1985, Challaghata Government School has been a cornerstone of education in the region. Over the years, we have grown into a premier institution known for our commitment to academic excellence and holistic development.
+            </p>
+            <p>
+                Our journey began with a small group of dedicated teachers and a handful of students. Today, we proudly serve hundreds of students, offering them a nurturing environment to grow and thrive.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Our Vision</h2>
+            <p>
+                Our vision is to create a world-class learning environment that empowers students to achieve their full potential. We aim to inspire curiosity, foster creativity, and instill a lifelong love for learning.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Our Facilities</h2>
+            <p>
+                We take pride in our state-of-the-art facilities, which include:
+            </p>
+            <ul style="text-align: left; margin: 15px auto; max-width: 600px;">
+                <li>Well-equipped classrooms with modern technology.</li>
+                <li>A fully stocked library with a wide range of books and resources.</li>
+                <li>Science and computer labs for hands-on learning.</li>
+                <li>Sports grounds for physical education and extracurricular activities.</li>
+                <li>A safe and inclusive environment for all students.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Our Achievements</h2>
+            <p>
+                Over the years, our students and staff have achieved numerous accolades in academics, sports, and extracurricular activities. We are proud of our legacy and continue to strive for excellence in all areas.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Challaghata Government School | Designed with ❤️ for education</p>
+        </div>
+    </div>
+</body>
+</html>
